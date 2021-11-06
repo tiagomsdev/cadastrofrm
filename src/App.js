@@ -1,5 +1,5 @@
 import "./App.css";
-import FormularioCadastro from "./components/FormularioCadastro";
+import FormularioCadastro from "./components/FormularioCadastro/FormularioCadastro";
 import { Container, Typography } from "@material-ui/core";
 import "@fontsource/roboto";
 

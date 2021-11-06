@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, TextField, Switch, FormControlLabel } from "@material-ui/core";
 
-function FormularioCadastro({ onSubmit, validaCPF}) {
+function DadosPessoais({onSubmit, validaCPF}) {
   const [nome, setNome] = useState("");
   const [sobrenome, setSobrenome] = useState("");
   const [cpf, setCpf] = useState("");
@@ -44,7 +44,7 @@ function FormularioCadastro({ onSubmit, validaCPF}) {
         error={!erros.cpf.valido}
         helperText={erros.cpf.texto}
         onChange={(event) => setCpf(event.target.value)}
-        onBlur={() => setErros({cpf:validaCPF(cpf)})}
+        onBlur={() => setErros({ cpf: validaCPF(cpf) })}
       />
 
       <FormControlLabel
@@ -77,4 +77,4 @@ function FormularioCadastro({ onSubmit, validaCPF}) {
   );
 }
 
-export default FormularioCadastro;
+export default DadosPessoais;
